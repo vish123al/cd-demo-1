@@ -19,7 +19,7 @@
   "cpus": 0.1,
   "instances": 1,
   "labels": {
-    "HAPROXY_0_VHOST": "rchertkow-publicsl-1sc2jf1bb7e1f-820918965.us-west-2.elb.amazonaws.com",
+    "HAPROXY_0_VHOST": "rchertkow-publicsl-1wz8n8r4ys8hy-1806082028.us-west-2.elb.amazonaws.com",
     "HAPROXY_GROUP": "external",
     "lastChangedBy": "velocity-team@mesosphere.com"
   },
