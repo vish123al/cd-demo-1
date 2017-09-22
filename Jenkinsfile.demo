@@ -13,7 +13,7 @@ def gitEmail() {
 }
 
 def ipAddress() {
-    sh "docker inspect test-container-${env.BUILD_NUMBER} | jq -r '.[0].NetworkSettings.IPAddress' > IP_ADDRESS-${env.BUILD_NUMBER}"
+    sh "docker inspect test-container-${env.BUILD_NUMBER} |  -r '.[0].NetworkSettings.IPAddress' > IP_ADDRESS-${env.BUILD_NUMBER}"
     def ipAddress = readFile("IP_ADDRESS-${env.BUILD_NUMBER}").trim()
     sh "rm -f IP_ADDRESS-${env.BUILD_NUMBER}"
     return ipAddress
